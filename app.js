@@ -1,6 +1,9 @@
 var hoursArray = ['10AM', '11AM', '12PM', '1PM', '2PM', '3PM', '4PM', '5PM', '6PM'];
 //var location = ['pikePlaceMarket', 'seaTacAirport', 'southCenterMall', 'bellevueSquare', 'alki']
 
+
+
+////////////////////////////////////////////////////////////
 var pikePlaceMarket = {
   minCustHr: 17,
   maxCustHr: 88,
@@ -13,7 +16,10 @@ var pikePlaceMarket = {
   calcHourlyT: function() {
     return Math.floor(this.calcRand() * this.avgCookiesCust);
   },
+
 };
+//////////////////////////////////////////////////////////////
+
 
   for (var i = 0; i < hoursArray.length; i++) {
     pikePlaceMarket.hourlyTArray.push(pikePlaceMarket.calcHourlyT())
@@ -23,27 +29,9 @@ var pikePlaceMarket = {
     var textnode =document.createTextNode(hoursArray[i] + ": " + pikePlaceMarket.hourlyTArray[i]);
     node.appendChild(textnode);
     document.getElementById('list').appendChild(node);
-
 }
 
-
-  console.log(pikePlaceMarket.calcRand(pikePlaceMarket.minCustHr,pikePlaceMarket.maxCustHr))
-
-
-
-
-// document.getElementById('10AM')
-// document.getElementById('11AM')
-// document.getElementById('12PM')
-// document.getElementById('1PM')
-// document.getElementById('2PM')
-// document.getElementById('3PM')
-// document.getElementById('4PM')
-// document.getElementById('5PM')
-
-
-// document.getElementById('TOTAL')
-
+console.log(pikePlaceMarket.calcRand(pikePlaceMarket.minCustHr,pikePlaceMarket.maxCustHr));
 
 
 
