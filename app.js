@@ -31,6 +31,10 @@ var pikePlaceMarket = {
     document.getElementById('list').appendChild(node);
 }
 
+
+
+
+
 console.log(pikePlaceMarket.calcRand(pikePlaceMarket.minCustHr,pikePlaceMarket.maxCustHr));
 
 
