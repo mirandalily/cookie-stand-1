@@ -18,7 +18,7 @@
 
 var pikePlaceMarket = new CookieStand("Pike Place Market", 'pike', 17, 88, 5.2);
 
-function CookieStand(storeLocation, domID, minCustHr, maxCustHr, avgCookiesCust) {
+function CookieStand(storeLocation, minCustHr, maxCustHr, avgCookiesCust) {
   this.storeLocation = storeLocation;
   this.minCustHr = minCustHr;
   this.maxCustHr = maxCustHr;
